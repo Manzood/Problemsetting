@@ -23,6 +23,6 @@ Continuing the above example, the array after sorting would look something like 
 
 Now all there's left to do is traverse through the array, and update it in our array, using the following step:
 
-```ans[ a[i][1] ] = i```
+        ans[ a[i][1] ] = i
 
 Time Complexity: O(n\*log(n)), because sorting in this case would have O(n\*log(n)) Time Complexity.
