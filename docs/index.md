@@ -30,7 +30,7 @@ Time Complexity: O(n\*log(n)), because sorting in this case would have O(n\*log(
 
 #### Code (C++):
 
-```
+```c++
 #include "bits/stdc++.h"
 using namespace std;
 
