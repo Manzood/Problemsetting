@@ -5,7 +5,7 @@ layout: default
 
 ### Editorial for problem D) Watson's Sorting Challenge
 
-[~Link to problem~](https://www.hackerrank.com/contests/wtp-2021/challenges/d-a-harder-problem)
+[___Link to problem___](https://www.hackerrank.com/contests/wtp-2021/challenges/d-a-harder-problem)
 
 This is probably only slightly more advanced than the initial method, because it requires a more solid understanding of the programming language, but as a result, it is also more efficient.
 
