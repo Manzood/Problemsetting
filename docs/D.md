@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 ### Editorial for problem D) Watson's Sorting Challenge
 
 #### [Link to problem.] (https://www.hackerrank.com/contests/wtp-2021/challenges/d-a-harder-problem)
