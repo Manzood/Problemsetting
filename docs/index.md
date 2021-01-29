@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+---
+layout: default
+---
 
-You can use the [editor on GitHub](https://github.com/Manzood/Problemsetting/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Editorial for problem D) Watson's Sorting Challenge
 
-### Markdown
+#### [Link to problem.] (https://www.hackerrank.com/contests/wtp-2021/challenges/d-a-harder-problem)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This is probably only slightly more advanced than the initial method, because it requires a more solid understanding of the programming language, but as a result, it is also more efficient.
 
-```markdown
-Syntax highlighted code block
+    The key thing we can do is pair the values we recieve as input with the initial index.
+    For example, if we recieve the following array in input: [5, 10, 40, 30, 20], the resultant array that we store would look something like this:
 
-# Header 1
-## Header 2
-### Header 3
+        [ [5, 0], [10, 1], [40, 2], [30, 3], [20, 4] ]
 
-- Bulleted
-- List
+    This can be implemented using either a 2D array or std::pair in C++.
 
-1. Numbered
-2. List
+    Now, if we sort with the first index of each element in the array as a key value, We can move the elements into ascending order while retaining their original indexes.
+    Continuing the above example, the array after sorting would look something like this:
 
-**Bold** and _Italic_ and `Code` text
+        [ [5, 0], [10, 1], [20, 4], [30, 3], [40, 2] ]
 
-[Link](url) and ![Image](src)
-```
+    Now all there's left to do is traverse through the array, and update it in our array, using the following step:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        ```ans[ a[i][1] ] = i```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Manzood/Problemsetting/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    Time Complexity: O(n\*log(n)), because sorting in this case would have O(n\*log(n)) Time Complexity.
