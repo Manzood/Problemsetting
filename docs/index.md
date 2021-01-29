@@ -26,3 +26,30 @@ Now all there's left to do is traverse through the array, and update it in our a
         ans[ a[i][1] ] = i
 
 Time Complexity: O(n\*log(n)), because sorting in this case would have O(n\*log(n)) Time Complexity.
+
+
+#### Code (C++):
+
+```
+#include "bits/stdc++.h"
+using namespace std;
+
+int32_t main () {
+    int n;
+    scanf("%d", &n);
+    vector <pair <int, int>> a(n);
+    vector <int> ans(n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i].first);
+        a[i].second = i;
+    }
+    sort(a.begin(), a.end());
+    for (int i = 0; i < n; i++) {
+        ans[a[i].second] = i;
+    }
+    for (int i = 0; i < n; i++) {
+        printf("%d ", ans[i]);
+    }
+    printf("\n");
+}
+```
